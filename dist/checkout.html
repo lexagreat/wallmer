@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="format-detection" content="telephone=no">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Оформление заказа</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header>
+</header>
+      <main class="main">
+         <div class="checkout-page">
+            <div class="container">
+               <div class="checkout-page__wrapper">
+                  <a class="checkout-page__back" href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16 6L10 12L16 18" stroke="#171818" stroke-opacity="0.8" stroke-linecap="square" />
+                     </svg>
+                     <span>Назад к корзине</span>
+                  </a>
+                  <h1 class="checkout-page__title">Оформление заказа</h1>
+                  <ul class="checkout-page__tabs">
+                     <li>
+                        <label for="checkout-page__tabs0">
+                           <input checked type="radio" name="checkout-page__tabs" id="checkout-page__tabs0" value="0">
+                           <span>Частное лицо</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label for="checkout-page__tabs1">
+                           <input type="radio" name="checkout-page__tabs" id="checkout-page__tabs1" value="1">
+                           <span>Организация</span>
+                        </label>
+                     </li>
+                  </ul>
+                  <div class="checkout-page__main">
+                     <div class="checkout-page__steps">
+                        <div class="checkout-page__step checkout-step checkout-first active">
+                           <button class="checkout-step__change">Изменить</button>
+                           <div class="checkout-step__title">
+                              <span>1.</span>
+                              <span>Получатель</span>
+                           </div>
+                           <div class="checkout-step__spoiler collapse_show">
+                              <div class="checkout-step__main">
+                                 <div class="checkout-tab active" data-tab="0">
+                                    <ul class="checkout-first__inputs">
+                                       <li style="grid-column: span 2;">
+                                          <div class="app-input">
+                                             <label>ФИО</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Телефон</label>
+                                             <input type="text" data-phone>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>E-mail</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="checkout-tab" data-tab="1">
+                                    <ul class="checkout-first__inputs">
+                                       <li style="grid-column: span 2;">
+                                          <div class="app-input">
+                                             <label>ФИО</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Телефон</label>
+                                             <input type="text" data-phone>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>E-mail</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>ИНН</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Наименование</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="checkout-first__check">
+                                    <label class="app-checkbox">
+                                       <input type="checkbox">
+                                       <div>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 20 20" fill="none">
+                                             <path
+                                                d="M7.50033 18.3334H12.5003C16.667 18.3334 18.3337 16.6667 18.3337 12.5001V7.50008C18.3337 3.33341 16.667 1.66675 12.5003 1.66675H7.50033C3.33366 1.66675 1.66699 3.33341 1.66699 7.50008V12.5001C1.66699 16.6667 3.33366 18.3334 7.50033 18.3334Z"
+                                                fill="#171818" stroke="#171818" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                             <path d="M6.45801 9.99993L8.81634 12.3583L13.5413 7.6416" stroke="white"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                       </div>
+                                       <span>Хочу получать новости и узнавать о специальных предложениях в числе
+                                          первых</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <button class="checkout-step__next btn white">Далее</button>
+                           </div>
+                           <ul class="checkout-step__result">
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result1.svg" alt="">
+                                 </div>
+                                 <span>Александр Иванов </span>
+                              </li>
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result2.svg" alt="">
+                                 </div>
+                                 <span>+7 (903) 123-44-55</span>
+                              </li>
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result3.svg" alt="">
+                                 </div>
+                                 <span>ivanov.a@mail.ru</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="checkout-page__step checkout-step checkout-second">
+                           <button class="checkout-step__change">Изменить</button>
+                           <div class="checkout-step__title">
+                              <span>2.</span>
+                              <span>Адрес доставки</span>
+                           </div>
+                           <div class="checkout-step__spoiler collapse">
+                              <div class="checkout-step__main">
+                                 <div class="app-input checkout-second__city">
+                                    <label>Город</label>
+                                    <input type="text">
+                                 </div>
+                                 <ul class="checkout-second__ways">
+                                    <li>
+                                       <label class="checkout-way">
+                                          <input type="radio" name="checkout-delivery" value="checkout-delivery0">
+                                          <div class="circle checkout-way__circle"></div>
+                                          <div class="checkout-way__info">
+                                             <h4 class="checkout-way__title">Курьер </h4>
+                                             <p>
+                                                <span>1-2 раб.дня</span><span>бесплатно</span>
+                                             </p>
+                                          </div>
+                                       </label>
+                                    </li>
+                                    <li>
+                                       <label class="checkout-way">
+                                          <input type="radio" name="checkout-delivery" value="checkout-delivery1">
+                                          <div class="circle checkout-way__circle"></div>
+                                          <div class="checkout-way__info">
+                                             <h4 class="checkout-way__title">СДЭК </h4>
+                                             <p>
+                                                <span>3-4 раб.дня</span><span>бесплатно</span>
+                                             </p>
+                                          </div>
+                                       </label>
+                                    </li>
+                                    <li>
+                                       <label class="checkout-way">
+                                          <input type="radio" name="checkout-delivery" value="checkout-delivery2">
+                                          <div class="circle checkout-way__circle"></div>
+                                          <div class="checkout-way__info">
+                                             <h4 class="checkout-way__title">Почта РФ </h4>
+                                             <p>
+                                                <span>7-14 раб.дня</span><span>от 299 ₽</span>
+                                             </p>
+                                          </div>
+                                       </label>
+                                    </li>
+                                 </ul>
+                                 <div class="checkout-second__tab" data-tab="checkout-delivery0">
+                                    <ul class="checkout-courier">
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Адрес</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Квартира/Офис</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Подъезд</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Этаж</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Домофон</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="app-select" id="dateSelect"></div>
+                                       </li>
+                                       <li>
+                                          <div class="app-select" id="timeSelect"></div>
+                                       </li>
+                                       <li>
+                                          <div class="app-input">
+                                             <label>Комментарий</label>
+                                             <input type="text">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="checkout-second__tab" data-tab="checkout-delivery1">
+                                    <div class="checkout-sdek">
+                                       <button class="btn white">Выберите пункт выдачи</button>
+                                    </div>
+                                 </div>
+                                 <div class="checkout-second__tab" data-tab="checkout-delivery2">
+                                    <div class="checkout-pochta">
+                                       тут контент для почты россии
+                                    </div>
+                                 </div>
+                              </div>
+                              <button class="checkout-step__next btn white">Далее</button>
+                           </div>
+                           <ul class="checkout-step__result">
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result4.svg" alt="">
+                                 </div>
+                                 <p>
+                                    <span>Курьер,</span><span>бесплатно</span>
+                                 </p>
+                              </li>
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result5.svg" alt="">
+                                 </div>
+                                 <p>
+                                    <span>29 ноя, чт,</span>
+                                    <span>09:00 - 13:00</span>
+                                 </p>
+                              </li>
+                              <li>
+                                 <div class="circle">
+                                    <img src="img/result6.svg" alt="">
+                                 </div>
+                                 <span>г. Москва, ул. Тверская-Ямская 1-я, 8, корп. стр 1</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="checkout-page__step checkout-step checkout-third">
+                           <div class="checkout-step__title">
+                              <span>3.</span>
+                              <span>Способ оплаты</span>
+                           </div>
+                           <div class="checkout-step__spoiler collapse">
+                              <div class="checkout-step__main">
+                                 <div class="checkout-tab active" data-tab="0">
+                                    <ul class="checkout-third__list">
+                                       <li>
+                                          <label>
+                                             <input type="radio" name="checkoutPayment" value="0">
+                                             <div class="circle"></div>
+                                             <div>
+                                                <span>
+                                                   Наличными или картой при получении
+                                                </span>
+                                                <img src="img/payment1.svg" alt="">
+                                             </div>
+                                          </label>
+                                       </li>
+                                       <li>
+                                          <label>
+                                             <input type="radio" name="checkoutPayment" value="1">
+                                             <div class="circle"></div>
+                                             <div>
+                                                <span>
+                                                   Банковской картой онлайн
+                                                </span>
+                                                <img src="img/payment2.svg" alt="">
+                                             </div>
+                                          </label>
+                                       </li>
+                                       <li>
+                                          <label>
+                                             <input type="radio" name="checkoutPayment" value="2">
+                                             <div class="circle"></div>
+                                             <div>
+                                                <span>
+                                                   Системой быстрых платежей
+                                                </span>
+                                                <img src="img/payment3.svg" alt="">
+                                             </div>
+                                          </label>
+                                       </li>
+                                       <li>
+                                          <label>
+                                             <input type="radio" name="checkoutPayment" value="3">
+                                             <div class="circle"></div>
+                                             <div>
+                                                <span>
+                                                   Оплата в рассрочку
+                                                </span>
+                                                <img src="img/payment4.svg" alt="">
+                                             </div>
+                                          </label>
+                                       </li>
+                                    </ul>
+
+                                 </div>
+                                 <div class="checkout-tab" data-tab="1">
+                                    <ul class="checkout-third__list">
+                                       <li>
+                                          <label>
+                                             <input type="radio" name="checkoutPayment" value="5">
+                                             <div class="circle"></div>
+                                             <div>
+                                                <span>
+                                                   Оплата по счету
+                                                </span>
+                                                <img src="img/payment5.svg" alt="">
+                                             </div>
+                                          </label>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <aside class="checkout-page__aside checkout-aside">
+                        <div class="checkout-aside__header">
+                           Ваш заказ
+                        </div>
+                        <div class="checkout-aside__main">
+                           <ul>
+                              <li>
+                                 <span style="color: #505050;">Товары
+                                    (3)</span>
+                                 <span style="color: #171818;">80 000 ₽</span>
+                              </li>
+                              <li>
+                                 <span style="color: #505050;">Доставка</span>
+                                 <span style="color: #171818;">бесплатно</span>
+                              </li>
+                              <li>
+                                 <span style="color: #505050;">Скидка</span>
+                                 <span style="color: #58A942;">- 800 ₽</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="checkout-aside__footer">
+                           <div class="checkout-aside__price">
+                              <span>Итого</span>
+                              <span>79 200 ₽</span>
+                           </div>
+                           <button class="checkout-aside__btn btn yellow">Оформить заказ</button>
+                           <p class="checkout-aside__policy">
+                              Нажимая на кнопку «Оформить заказ», я принимаю <a href="#" target="_blank">условия
+                                 публичной оферты</a> и 
+                              <a href="#" target="_blank">политики конфиденциальности</a>
+                           </p>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+   <script src="https://unpkg.com/imask"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+.collapse:not(.collapse_show) {
+   display: none;
+}
+body {
+   --containerPadding: 50px;
+   --headerHeight: 51px;
+   --sectionMargin: 120px;
+   @media (max-width: $tablet) {
+      --containerPadding: 16px;
+      --sectionMargin: 90px;
+   }
+   @media (max-width: $mobile) {
+      --containerPadding: 12px;
+      --sectionMargin: 60px;
+   }
+}
+.container {
+   max-width: 1920px;
+   padding: 0 var(--containerPadding);
+   margin: 0 auto;
+}
+
+.main {
+   padding-top: calc(var(--headerHeight) + 30px);
+   @media (max-width: $mobile) {
+      padding-top: calc(var(--headerHeight) + 20px);
+   }
+}
+.circle {
+   --size: 32px;
+   width: var(--size);
+   height: var(--size);
+   flex: 0 0 var(--size);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn {
+   height: 51px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 20px;
+   border-radius: 10px;
+   border: 1px solid transparent;
+   color: #171818;
+   font-family: $fontMontseratt;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 150%; /* 24px */
+   letter-spacing: 0.32px;
+   &.white {
+      color: #171818;
+      border-color: #717171;
+      background-color: white;
+   }
+   &.yellow {
+      border-color: #fad963;
+      background: #fad963;
+      color: #171818;
+   }
+}
+.app-input {
+   overflow: hidden;
+   position: relative;
+   input {
+      height: 51px;
+      width: 100%;
+      background-color: white;
+      border-radius: 4px;
+      border: 1px solid #eeeef0;
+      padding-left: 16px;
+
+      /* Regular/T,14-150 */
+      font-family: $fontInter;
+      font-size: 16px;
+      color: #171818;
+      line-height: 150%; /* 21px */
+      transition: $transition;
+   }
+   label {
+      pointer-events: none;
+      color: #888;
+      transition: $transition;
+      font-family: $fontInter;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      translate: 0 -50%;
+   }
+   &.filled {
+      input {
+         padding-top: 15px;
+      }
+      label {
+         translate: 0 -150%;
+         font-size: 12px;
+      }
+   }
+}
+.app-checkbox {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   color: #505050;
+   font-family: $fontInter;
+   font-size: 16px;
+   cursor: pointer;
+   line-height: 130%; /* 20.8px */
+   @media (max-width: $mobile) {
+      font-size: 14px;
+   }
+   input {
+      display: none;
+   }
+   div {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+      border: 1px solid black;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+         width: 20px;
+         height: 20px;
+         flex: 0 0 20px;
+         opacity: 0;
+         transition: $transition;
+      }
+   }
+   &:has(input:checked) {
+      div {
+         svg {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.app-select {
+   position: relative;
+   &.open {
+      .select__content {
+         opacity: 1;
+         pointer-events: all;
+      }
+   }
+   &.filled {
+      .select {
+         &__title {
+            padding-top: 15px;
+         }
+         &__placeholder {
+            translate: 0 -150%;
+            font-size: 12px;
+         }
+      }
+   }
+   .select {
+      &__title {
+         height: 51px;
+         width: 100%;
+         background-color: white;
+         border-radius: 4px;
+         border: 1px solid #eeeef0;
+         padding: 0 16px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         color: #171818;
+         font-family: $fontInter;
+         font-size: 16px;
+         transition: $transition;
+      }
+      &__placeholder {
+         position: absolute;
+         top: 50%;
+         translate: 0 -50%;
+         left: 16px;
+         color: #888;
+         font-family: $fontInter;
+         font-size: 12px;
+         line-height: 130%; /* 15.6px */
+         transition: $transition;
+      }
+      &__content {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         opacity: 0;
+         pointer-events: none;
+         background-color: white;
+         border-radius: 4px;
+         overflow: hidden;
+         transition: $transition;
+         border: 1px solid #eeeef0;
+      }
+      &__list {
+         display: flex;
+         flex-direction: column;
+         li {
+            padding: 12px;
+            border-bottom: 1px solid #eeeef0;
+         }
+         li:last-child {
+            border: 0;
+         }
+      }
+      &__item {
+         color: #171818;
+         font-family: $fontInter;
+         font-size: 16px;
+      }
+   }
+}

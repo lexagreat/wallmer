@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Возврат",
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="return-banner">
+            <div class="container">
+               <div class="return-banner__wrapper">
+                  <div class="return-banner__main">
+                     <h1 class="return-banner__title">Возврат</h1>
+                     <p class="return-banner__text">
+                        Мы надеемся, что вы останетесь довольны покупкой, но, если понадобится, вы можете полностью или
+                        частично вернуть заказ в течение 14 дней со дня получения.
+                     </p>
+                  </div>
+                  <div class="return-banner__image">
+                     <img src="img/return/hero.svg" alt="">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="return-conditions">
+            <div class="container">
+               <div class="return-conditions__wrapper">
+                  <h2 class="return-subtitle return-conditions__title">Условия возврата товара</h2>
+                  <ul class="return-list">
+                     <li>
+                        <div class="circle">
+                           <img src="img/icons/return-condition1.svg" alt="">
+                        </div>
+                        Товар не использовался и не имеет следов использования.
+                     </li>
+                     <li>
+                        <div class="circle">
+                           <img src="img/icons/return-condition2.svg" alt="">
+                        </div>
+                        Сохранена упаковка, товарный вид, потребительские свойства, пломбы,
+                        фабричные ярлыки.
+                     </li>
+                     <li>
+                        <div class="circle">
+                           <img src="img/icons/return-condition3.svg" alt="">
+                        </div>
+                        В наличии полный комплект аксессуаров и сопроводительной документации, поставляемых в комплекте
+                        с
+                        товаром.
+                     </li>
+                     <li>
+                        <div class="circle">
+                           <img src="img/icons/return-condition4.svg" alt="">
+                        </div>
+                        В наличии кассовый чек, товарный чек или другой документ, подтверждающий факт покупки в
+                        интернет-магазине.
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="return-request">
+            <div class="container">
+               <div class="return-request__wrapper return-conditions__wrapper">
+                  <h2 class="return-request__titel return-subtitle">Заявка на возврат товара</h2>
+                  <ul class="return-list">
+                     <li>
+                        Вы можете сделать заявку на возврат товара двумя способами:
+                     </li>
+                  </ul>
+                  <div class="return-request__block return-block">
+                     <div class="return-block__title">1 способ</div>
+                     <ul class="return-list">
+                        <li>
+                           <div class="circle">
+                              <img src="img/icons/return-request1.svg" alt="">
+                           </div>
+                           Заполните форму на нашем сайте ниже
+                        </li>
+                        <li>
+                           <div class="circle">
+                              <img src="img/icons/return-request2.svg" alt="">
+                           </div>
+                           Мы свяжемся с вами в течение трех рабочих дней
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="return-request__form return-form">
+                     <div class="return-form__card">
+                        <h3 class="return-form__title">Форма заявления на возврат</h3>
+                        <ul class="return-form__list">
+                           <div class="return-form__block">
+                              <h4 class="return-form__subtitle">Информация о заказе</h4>
+                              <ul class="return-form__inputs">
+                                 <li>
+                                    <input type="text" class="app-input" placeholder="Номер заказа">
+                                 </li>
+                                 <li>
+                                    <input type="text" class="app-input" placeholder="Дата покупки">
+                                 </li>
+                                 <li style="grid-column: span 2;">
+                                    <input type="text" class="app-input" placeholder="Серийный номер">
+                                 </li>
+                              </ul>
+
+                           </div>
+                           <div class="return-form__block">
+                              <h4 class="return-form__subtitle">Информация о товаре</h4>
+                              <ul class="return-form__inputs">
+                                 <li style="grid-column: span 2;">
+                                    <input type="text" class="app-input" placeholder="Название товара">
+                                 </li>
+                                 <li style="grid-column: span 2;">
+                                    <input type="text" class="app-input" placeholder="Опишите проблему подробно">
+                                 </li>
+                              </ul>
+
+                           </div>
+                           <div class="return-form__block">
+                              <h4 class="return-form__subtitle">Информация о покупателе</h4>
+                              <ul class="return-form__inputs">
+                                 <li style="grid-column: span 2;">
+                                    <input type="text" class="app-input" placeholder="ФИО">
+                                 </li>
+                                 <li>
+                                    <input type="text" class="app-input" placeholder="Телефон" data-phone>
+                                 </li>
+                                 <li>
+                                    <input type="text" class="app-input" placeholder="E-mail">
+                                 </li>
+                              </ul>
+
+                           </div>
+                        </ul>
+                     </div>
+                     <button class="return-form__btn btn yellow">Отправить</button>
+                  </div>
+                  <div class="return-request__block return-block">
+                     <div class="return-block__title">2 способ</div>
+                     <ul class="return-list">
+                        <li>
+                           <div class="circle">
+                              <img src="img/icons/return-request3.svg" alt="">
+                           </div>
+                           Скачайте и заполните заявление - <a href="#" target="_blank"
+                              style="border-bottom: 1px solid #171818;">ссылка</a>
+                        </li>
+                        <li>
+                           <div class="circle">
+                              <img src="img/icons/return-request4.svg" alt="">
+                           </div>
+                           Отправьте заявление на электронную почту <a href="mailto:info@wollmer.ru">info@wollmer.ru</a>
+                        </li>
+                        <li>
+                           <div class="circle">
+                              <img src="img/icons/return-request5.svg" alt="">
+                           </div>
+                           Мы свяжемся с вами в течение трех рабочих дней
+                        </li>
+                     </ul>
+                     <button class="btn white">Скачать заявление</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="return-conditions">
+            <div class="container">
+               <div class="return-conditions__wrapper">
+                  <h2 class="return-subtitle return-conditions__title">Если вы оплатили заказ в рассрочку </h2>
+                  <ul class="return-list">
+                     <li>
+                        по порядку возврата товара свяжитесь с отделом заботы по телефону:
+                        <a href="tel:8 (800) 222-59-76">8 (800) 222-59-76</a>
+                     </li>
+
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="faq-section">
+            <div class="container">
+               <div class="faq-section__wrapper">
+                  <h2 class="faq-section__title return-title">FAQ: ответы на важные вопросы</h2>
+                  <ul class="faq-section__list">
+                     <li class="faq-section__item">
+                        <div class="faq-section__header">
+                           <h4 class="faq-section__subtitle">Как и когда вернутся деньги за заказ?</h4>
+                           <div class="faq-section__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                 <path d="M0 12H24" stroke="#171818" stroke-width="1.5" />
+                                 <path d="M12 0L12.0034 24" stroke="#171818" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="faq-section__spoiler collapse">
+                           <p>Мы перечислим деньги в течение 10 дней. Отсчет начинается на следующий день после того,
+                              как товар был получен сотрудниками магазина.
+                              Если вы оплачивали заказ при получении, мы переведем деньги по реквизитам в заявлении на
+                              возврат.
+                              Если вы оплачивали заказ онлайн в сервисе ЮKassa, деньги вернутся на счет, с которого была
+                              оплата.
+                              Пожалуйста, учитывайте, что на счет деньги могут поступить позже — срок обработки платежа
+                              зависит от вашего банка.</p>
+                        </div>
+                     </li>
+                     <li class="faq-section__item">
+                        <div class="faq-section__header">
+                           <h4 class="faq-section__subtitle">Как вернуть товар, если он куплен на маркетплейсе?</h4>
+                           <div class="faq-section__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                 <path d="M0 12H24" stroke="#171818" stroke-width="1.5" />
+                                 <path d="M12 0L12.0034 24" stroke="#171818" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="faq-section__spoiler collapse">
+                           <p>Мы перечислим деньги в течение 10 дней. Отсчет начинается на следующий день после того,
+                              как товар был получен сотрудниками магазина.
+                              Если вы оплачивали заказ при получении, мы переведем деньги по реквизитам в заявлении на
+                              возврат.
+                              Если вы оплачивали заказ онлайн в сервисе ЮKassa, деньги вернутся на счет, с которого была
+                              оплата.
+                              Пожалуйста, учитывайте, что на счет деньги могут поступить позже — срок обработки платежа
+                              зависит от вашего банка.</p>
+                        </div>
+                     </li>
+                     <li class="faq-section__item">
+                        <div class="faq-section__header">
+                           <h4 class="faq-section__subtitle">Как вернуть товар ненадлежащего качества, если 14 дней уже
+                              прошло?</h4>
+                           <div class="faq-section__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                 <path d="M0 12H24" stroke="#171818" stroke-width="1.5" />
+                                 <path d="M12 0L12.0034 24" stroke="#171818" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="faq-section__spoiler collapse">
+                           <p>Мы перечислим деньги в течение 10 дней. Отсчет начинается на следующий день после того,
+                              как товар был получен сотрудниками магазина.
+                              Если вы оплачивали заказ при получении, мы переведем деньги по реквизитам в заявлении на
+                              возврат.
+                              Если вы оплачивали заказ онлайн в сервисе ЮKassa, деньги вернутся на счет, с которого была
+                              оплата.
+                              Пожалуйста, учитывайте, что на счет деньги могут поступить позже — срок обработки платежа
+                              зависит от вашего банка.</p>
+                        </div>
+                     </li>
+                     <li class="faq-section__item">
+                        <div class="faq-section__header">
+                           <h4 class="faq-section__subtitle">Как правильно заполнить заявление?</h4>
+                           <div class="faq-section__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                 <path d="M0 12H24" stroke="#171818" stroke-width="1.5" />
+                                 <path d="M12 0L12.0034 24" stroke="#171818" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="faq-section__spoiler collapse">
+                           <p>Мы перечислим деньги в течение 10 дней. Отсчет начинается на следующий день после того,
+                              как товар был получен сотрудниками магазина.
+                              Если вы оплачивали заказ при получении, мы переведем деньги по реквизитам в заявлении на
+                              возврат.
+                              Если вы оплачивали заказ онлайн в сервисе ЮKassa, деньги вернутся на счет, с которого была
+                              оплата.
+                              Пожалуйста, учитывайте, что на счет деньги могут поступить позже — срок обработки платежа
+                              зависит от вашего банка.</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="https://unpkg.com/imask"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
