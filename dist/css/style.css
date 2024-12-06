@@ -244,9 +244,9 @@ body {
 .app-input label {
   pointer-events: none;
   color: #888;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   position: absolute;
@@ -260,7 +260,7 @@ body {
 }
 
 .app-input.filled label {
-  translate: 0 -150%;
+  top: 28%;
   font-size: 12px;
 }
 
@@ -321,6 +321,11 @@ body {
 
 .app-select {
   position: relative;
+  z-index: 1;
+}
+
+.app-select.open .select__back {
+  pointer-events: all;
 }
 
 .app-select.open .select__content {
@@ -335,6 +340,16 @@ body {
 .app-select.filled .select__placeholder {
   translate: 0 -150%;
   font-size: 12px;
+}
+
+.app-select .select__back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 .app-select .select__title {
@@ -359,6 +374,7 @@ body {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .app-select .select__placeholder {
@@ -374,6 +390,7 @@ body {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  font-size: 16px;
 }
 
 .app-select .select__content {
@@ -945,6 +962,7 @@ body {
 }
 
 .checkout-way {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,7 +1034,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+  gap: 8px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 130%;
@@ -1184,6 +1202,8 @@ body {
 }
 
 .checkout-aside {
+  position: sticky;
+  top: var(--headerHeight);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1304,6 +1324,10 @@ body {
 
   .checkout-page__main {
     gap: 60px;
+  }
+
+  .checkout-second__ways {
+    gap: 14px;
   }
 }
 
@@ -1431,6 +1455,11 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .checkout-aside {
+    position: unset;
+    top: unset;
   }
 
   .checkout-aside {

@@ -252,6 +252,7 @@
    flex: 1;
 }
 .checkout-way {
+   height: 100%;
    display: flex;
    cursor: pointer;
    gap: 12px;
@@ -304,7 +305,7 @@
       p {
          display: flex;
          align-items: center;
-         gap: 12px;
+         gap: 8px;
          font-family: $fontInter;
          font-size: 14px;
          line-height: 130%; /* 18.2px */
@@ -345,6 +346,9 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
+      @media (max-width: $desktop) {
+         gap: 14px;
+      }
       @media (max-width: 1350px) {
          grid-template-columns: repeat(2, 1fr);
          gap: 12px;
@@ -466,6 +470,12 @@
    }
 }
 .checkout-aside {
+   position: sticky;
+   top: var(--headerHeight);
+   @media (max-width: $tablet) {
+      position: unset;
+      top: unset;
+   }
    height: fit-content;
    padding: 40px;
    --margin: 16px;

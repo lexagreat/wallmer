@@ -83,7 +83,7 @@ body {
    label {
       pointer-events: none;
       color: #888;
-      transition: $transition;
+      transition: all $transition;
       font-family: $fontInter;
       font-size: 16px;
       position: absolute;
@@ -96,7 +96,7 @@ body {
          padding-top: 15px;
       }
       label {
-         translate: 0 -150%;
+         top: 28%;
          font-size: 12px;
       }
    }
@@ -144,7 +144,11 @@ body {
 
 .app-select {
    position: relative;
+   z-index: 1;
    &.open {
+      .select__back {
+         pointer-events: all;
+      }
       .select__content {
          opacity: 1;
          pointer-events: all;
@@ -162,6 +166,15 @@ body {
       }
    }
    .select {
+      &__back {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-color: transparent;
+         pointer-events: none;
+      }
       &__title {
          height: 51px;
          width: 100%;
@@ -176,6 +189,7 @@ body {
          font-family: $fontInter;
          font-size: 16px;
          transition: $transition;
+         cursor: pointer;
       }
       &__placeholder {
          position: absolute;
@@ -187,6 +201,7 @@ body {
          font-size: 12px;
          line-height: 130%; /* 15.6px */
          transition: $transition;
+         font-size: 16px;
       }
       &__content {
          position: absolute;
